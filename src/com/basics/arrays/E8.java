@@ -1,0 +1,34 @@
+package com.basics.arrays;
+//Arrays of Objects {students} {interns} {Books} {pens} {bikes}
+class Student {
+    String name;
+    int USN;
+}
+class Intern{
+    String name;
+    int id;
+    Intern(String name , int id){
+        this.name = name;
+        this.id = id;
+    }
+}
+public class E8 {
+    public static void main(String[] args){
+        //int[] arr = {1,2,3,4,5};
+        Student[] students = new Student[3];
+        //(Student[0]{},Student[1]{},Student[2]{});
+        students[0] = new Student();
+        students[0].name = "Mallikarjun";
+        students[0].USN = 62;
+        System.out.println(students[0].name + ", " + students[0].USN );
+        Intern[] interns = new Intern[]{
+                new Intern("Pratiksha",90),
+                new Intern("Mallikarjun",62),
+                new Intern("Sahana",111)
+        };
+        for (Intern i : interns){
+            System.out.println(i.name + " ," + i.id);
+        }
+
+    }
+}

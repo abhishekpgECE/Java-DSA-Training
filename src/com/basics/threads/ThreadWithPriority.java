@@ -16,7 +16,7 @@ public class ThreadWithPriority extends Thread{
         t2.setName("Medium priority Thread");
         t3.setName("high priority Thread");
         t1.setPriority(Thread.MIN_PRIORITY);
-        t2.setPriority(Thread.NORM_PRIORITY);z
+        t2.setPriority(Thread.NORM_PRIORITY);
         t3.setPriority(Thread.MAX_PRIORITY);
         t1.setPriority(1);// IllegalArgumentsException
         t2.setPriority(5);// IllegalArgumentsException
